@@ -1,0 +1,82 @@
+* {
+	margin: 10;
+	padding: 10;
+	background: #ABB2B9;
+}
+
+.house {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-content: space-around;
+
+}
+
+
+.house_roof {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 250px 250px 300px;
+	border-color: transparent transparent #000 transparent;
+}
+
+
+.house_wall {
+	height: 500px;
+	width: 500px;
+	border: 2px solid #000;
+	display: flex;
+	background: #F8C471
+
+
+}
+
+
+.wall_window_green, .wall_window_red {
+	flex-basis: 80px;
+	height: 100px;
+	border: 2px solid #000;
+	display: flex;
+	margin: 20px;
+
+}
+
+
+.wall_window_green {
+	background: green;
+	order: 1;
+	flex: 1;
+}
+
+
+.wall_window_red {
+	background: red;
+	order: 3;
+	flex: 1;
+}
+
+
+.wall_door, .wall_window_green, .wall_window_red {
+	justify-content: space-around;
+}
+
+.window_frame_vert {
+	border: 1px solid #000;
+	transform: rotate(90deg);
+	width: 100px;
+	height: 10px;
+	background-color: #424949;
+	align-self: center;
+	margin: 16px;
+}
+
+.wall_door {
+	width: 100px;
+	height: 200px;
+	border: 2px solid #000;
+	background-color: #117A65;
+	order: 2;
+	flex: 1;
+	align-self: flex-end;
+}
